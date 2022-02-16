@@ -16,6 +16,8 @@ Minigame using Pygame
 2. pygame_objs
  : 파이썬 게임 코드에서 사용한 이미지 및 사운드가 모여있는 폴더입니다.
 
+3. gameplay_gif.gif
+ : 게임 시연 gif
 
 # 터미널 명령어로 게임 실행 방법
 명령 프롬프트 창을 열고
@@ -26,3 +28,5 @@ python -m minigame_ex.py
 를 입력하면 게임이 바로 시작됩니다.
 
 # 게임 영상
+
+<img src="https://github.com/ElenaLim/Pygame/blob/main/gameplay_gif.gif">
