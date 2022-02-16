@@ -21,6 +21,6 @@ Minigame using Pygame
 명령 프롬프트 창을 열고
 파이썬 파일이 있는 폴더로 이동 후
 
-python -m nubugame_ex.py
+python -m minigame_ex.py
 
 를 입력하면 게임이 바로 시작됩니다.
