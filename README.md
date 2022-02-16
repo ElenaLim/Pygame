@@ -24,3 +24,5 @@ Minigame using Pygame
 python -m minigame_ex.py
 
 를 입력하면 게임이 바로 시작됩니다.
+
+# 게임 영상
