@@ -10,7 +10,7 @@ Minigame using Pygame
 
 # 구성
 
-1. minigame_ex.py
+1. minigame.py
  : 게임 코드가 들어있는 파이썬 파일입니다.
 
 2. gameplay_gif.gif
