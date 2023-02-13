@@ -10,10 +10,10 @@ Minigame using Pygame
 
 # 구성
 
-1. minigame.py
+1. minigame.py, minigame_ver1.1.py
  : 게임 코드가 들어있는 파이썬 파일입니다.
 
-2. gameplay_gif.gif
+2. gameplay_gif.gif, ver1.1_demo.gif
  : 게임 시연 gif
 
 # 터미널 명령어로 게임 실행 방법
