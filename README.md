@@ -27,3 +27,6 @@ python -m minigame_ex.py
 # 게임 영상
 
 <img src="https://github.com/ElenaLim/Pygame/blob/main/gameplay_gif.gif">
+
+[intro&outro 추가 버전]
+<img src="https://github.com/ElenaLim/Pygame/blob/main/ver1.1_demo.gif">
