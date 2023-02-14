@@ -61,9 +61,6 @@ def button(msg,x,y,w,h,ic,ac,action=None,fcolor=BLACK):
     textRect.center = ( (x+(w/2)), (y+(h/2)) )
     GameDisplay.blit(textSurf, textRect)
 
-# 버튼 위치
-button1_locx = display_width/6
-button1_locy = display_height/1.7
 
 # 텍스트생성 및 get_rect 함수
 def text_objects(text, font1):
@@ -96,7 +93,7 @@ def game_intro():
         #start,quit버튼
         introBtn1 = button("START",display_width/6,display_height/1.7,200,100,BLACK,BLUE,action=True,fcolor=YELLOW)
         introBtn2 = button("QUIT",display_width/2,display_height/1.7,200,100,BLACK,RED,action=True,fcolor=YELLOW) 
-        #TODO: 버튼 누르면 동작하는 내용 추가 필요
+        #TODO: 버튼 누르면 동작
         if introBtn1 == True:
             return game()
         if introBtn2 ==True:
@@ -104,6 +101,13 @@ def game_intro():
             quit()
         pygame.display.update()
         FramePerSec.tick(FPS)
+
+#score reset
+def reset():
+    global SCORE
+    SCORE = 0
+    return SCORE
+
 ## 게임 내에서 동작할 클래스 설정 ##
 
 ## 플레이어에게 적용할 클래스
@@ -164,6 +168,7 @@ class Enemy(pygame.sprite.Sprite):
             self.rect.top = 0
             self.rect.center = (random.randint(30, 610), 0)
         return self.rect.center
+
 ###### 게임 설정 ########
 # 플레이어 및 적 개체 생성
 def game(speed = SPEED):
@@ -274,12 +279,10 @@ def game_outro():
         #retry,quit버튼
         outroBtn1 = button("RETRY",display_width/6,display_height/1.7,200,100,BLACK,BLUE,action=True,fcolor=YELLOW)
         outroBtn2 = button("QUIT",display_width/2,display_height/1.7,200,100,BLACK,RED,action=True,fcolor=YELLOW)
-        #time.sleep(1)
-        #pygame.display.update()
-        #time.sleep(5) 
-        #TODO: 버튼 누르면 동작하는 내용 추가 필요
+        #TODO: 버튼 누르면 동작
         if outroBtn1 == True:
-            return game()
+            reset()
+            game()
         if outroBtn2 ==True:
             pygame.quit()
             sys.exit()
