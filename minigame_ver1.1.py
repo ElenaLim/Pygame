@@ -1,7 +1,12 @@
 import pygame, sys
 from pygame.locals import *
 import random, time
+import os
 
+###pyinstaller로 이미지/소리 파일 포함해서 만들 때### 
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    os.chdir(sys._MEIPASS)
+    
 pygame.init()
 
 # 초당 프레임 설정
