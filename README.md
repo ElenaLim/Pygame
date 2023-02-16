@@ -27,3 +27,9 @@ python -m minigame_ex.py
 # 게임 영상
 
 <img src="https://github.com/ElenaLim/Pygame/blob/main/ver1.1_demo.gif">
+
+# 블로그
+해당 코드에 대한 자세한 설명은 아래의 게시물에서 확인할 수 있습니다.
+1. https://wonhwa.tistory.com/45
+2. https://wonhwa.tistory.com/65
+3. https://wonhwa.tistory.com/66
